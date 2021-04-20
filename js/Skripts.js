@@ -18,8 +18,25 @@ function jaunsProdukts() {
     popUp.style.display = "none"
 
     let produkts = {produktaValue: produktaVards.value}
+    produktaVards.value = "";
 
     bibliotec.push(produkts)
-    console.log(bibliotec);
+    render();
 
+}
+
+function render() {
+    let biblioteka = document.getElementById('biblioteka')
+    biblioteka.innerHTML = "";
+
+    for(let i = 0; i < bibliotec.length; i++) {
+        let biblioteka = `
+        <div class="bibliotec">
+            <h5>Produkta nosaukums: ${bibliotec[i].produktaVards}</h5>
+        </div>`;
+        biblioteka.innerHTML += bibliotec;
+        
+    }
+
+    localStorage.setItem("bibliotec", JSON.stringify(bibliotec))
 }
