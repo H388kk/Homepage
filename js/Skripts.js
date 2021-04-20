@@ -1,7 +1,9 @@
-console.log("Skripts stradā!")
+console.log("Skripts stradā!");
 
-document.getElementById("bobaBo").addEventListener("click", pogaStrada)
+document.getElementById("bobaBo").addEventListener("click", pogaStrada);
 
 function pogaStrada() {
-    console.log("Poga stradā")
+    console.log("Poga stradā");
+    let popUp = document.getElementById("popUp");
+    popUp.style.display = "block"
 }

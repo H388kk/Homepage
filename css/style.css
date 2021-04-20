@@ -22,5 +22,33 @@ button {
     width: 200px;
     height: 50px;
     font-size: 20px;
+    border-color: black;
     font-style: oblique;
+    background-color: lightblue;
+}
+
+#popUp {
+    left: 570px;
+    top: 300px;
+    position: fixed;
+    display: none;
+}
+
+#jaunsProdukts {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+input#produktaVards {
+    height: 20px;
+    width: 150px;
+    font-size: 15px;
+    border-color: black;
+}
+
+#forma {
+    height: 40px;
+    width: 265px;
+    background-color: black;
 }
