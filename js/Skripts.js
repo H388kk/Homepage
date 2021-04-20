@@ -1,1 +1,1 @@
-console.log("Skripts stradā")
+console.log("Skripts stradā!")
